@@ -10,26 +10,70 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let count = self.navigationController?.viewControllers.count
+
+        if(count! > 1){
+            kDelegate?.drawerController?.openDrawerGestureModeMask = .custom
+            kDelegate?.drawerController?.closeDrawerGestureModeMask = .custom
+        }else{
+            kDelegate?.drawerController?.openDrawerGestureModeMask = .all
+            kDelegate?.drawerController?.closeDrawerGestureModeMask = .all
+        }
+        
+    }
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        if((self.navigationController?.viewControllers.count)! > 1){
+            self.setupLeftBtn(imageName: "leftBack")
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK:-init  按钮
+    func setupLeftBtn(imageName:String) -> Void {
+        let spaceItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        
+        spaceItem.width = -10
+        
+        let leftBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        leftBtn.addTarget(self, action: #selector(leftAction), for: .touchUpInside)
+        let bgImage = UIImage(named: imageName)
+        leftBtn.setImage(bgImage, for: .normal)
+        
+        let leftItem = UIBarButtonItem(customView: leftBtn)
+        
+        self.navigationItem.leftBarButtonItems = [spaceItem,leftItem]
     }
-    */
+    
+    func setupRight(imageName:String) -> Void {
+        let spaceItem = UIBarButtonItem(barButtonSystemItem: .fixedSpace, target: nil, action: nil)
+        
+        spaceItem.width = -10
+        
+        let rightBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        rightBtn.addTarget(self, action: #selector(rightAction), for: .touchUpInside)
+        let bgImage = UIImage(named: imageName)
+        rightBtn.setImage(bgImage, for: .normal)
+        
+        let rightItem = UIBarButtonItem(customView: rightBtn)
+        
+        self.navigationItem.rightBarButtonItems = [spaceItem,rightItem]
+        
+    }
+    
+    // MARK:-点击事件
+    
+    func leftAction() -> Void {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func rightAction() -> Void {
+        print("点击")
+    }
+
 
 }

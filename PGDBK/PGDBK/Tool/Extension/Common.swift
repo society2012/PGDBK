@@ -22,6 +22,8 @@ let kScreenW :CGFloat = UIScreen.main.bounds.width
 
 let kScreenH :CGFloat = UIScreen.main.bounds.height
 
+let kDelegate = UIApplication.shared.delegate as? AppDelegate
+
 
 func kRGBColorFromHex(rgbValue: Int) -> (UIColor) {
     

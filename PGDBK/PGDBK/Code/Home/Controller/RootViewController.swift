@@ -12,6 +12,8 @@ class RootViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.setupLeftBtn(imageName: "mainSlide")
 
         self.view.backgroundColor = UIColor.red
     }
