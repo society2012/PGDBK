@@ -11,14 +11,13 @@
 
 
 
-#if 0
+#if 1
     //测试
-#define SERVER_IP @"http://120.24.240.237:8088/app"
-
+#define SERVER_IP @"http://localhost:8888/blog"
 
 #else
 
-#define SERVER_IP @"http://seller.zintao.com/app"
+#define SERVER_IP @"http://www.hubalala.cn/blog"
 
 #endif
 

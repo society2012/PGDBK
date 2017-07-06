@@ -14,7 +14,6 @@ class BaseViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         let count = self.navigationController?.viewControllers.count
-
         if(count! > 1){
             kDelegate?.drawerController?.openDrawerGestureModeMask = .custom
             kDelegate?.drawerController?.closeDrawerGestureModeMask = .custom
@@ -28,7 +27,9 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if((self.navigationController?.viewControllers.count)! > 1){
+        //不写不能滑动返回
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self as?UIGestureRecognizerDelegate
+                if((self.navigationController?.viewControllers.count)! > 1){
             self.setupLeftBtn(imageName: "leftBack")
         }
     }

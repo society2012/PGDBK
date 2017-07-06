@@ -15,7 +15,6 @@
 		679EF39E1F0C9AF100F51B6B /* leftBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3921F0C9AF100F51B6B /* leftBack@2x.png */; };
 		679EF39F1F0C9AF100F51B6B /* erweima@2x.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3931F0C9AF100F51B6B /* erweima@2x.JPG */; };
 		679EF3A01F0C9AF100F51B6B /* defaultIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3941F0C9AF100F51B6B /* defaultIcon@2x.png */; };
-		679EF3A11F0C9AF100F51B6B /* comment@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3951F0C9AF100F51B6B /* comment@2X.png */; };
 		679EF3A21F0C9AF100F51B6B /* collected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3961F0C9AF100F51B6B /* collected@2x.png */; };
 		679EF3A31F0C9AF100F51B6B /* collect@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3971F0C9AF100F51B6B /* collect@2x.png */; };
 		679EF3A41F0C9AF100F51B6B /* aboutMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3981F0C9AF100F51B6B /* aboutMe@2x.png */; };
@@ -23,6 +22,18 @@
 		679EF3BA1F0CC07E00F51B6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3B41F0CC07E00F51B6B /* Assets.xcassets */; };
 		679EF3BB1F0CC07E00F51B6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3B51F0CC07E00F51B6B /* LaunchScreen.storyboard */; };
 		679EF3BC1F0CC07E00F51B6B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3B71F0CC07E00F51B6B /* Info.plist */; };
+		679EF3BF1F0CC42600F51B6B /* LeftTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3BD1F0CC42600F51B6B /* LeftTableViewCell.swift */; };
+		679EF3C01F0CC42600F51B6B /* LeftTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3BE1F0CC42600F51B6B /* LeftTableViewCell.xib */; };
+		679EF3C21F0CC5F300F51B6B /* LeftHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3C11F0CC5F300F51B6B /* LeftHeadView.swift */; };
+		679EF3C41F0CC5FE00F51B6B /* LeftHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3C31F0CC5FE00F51B6B /* LeftHeadView.xib */; };
+		679EF3C61F0CCB0000F51B6B /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3C51F0CCB0000F51B6B /* LeftViewController.xib */; };
+		679EF3C91F0CD12E00F51B6B /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3C81F0CD12E00F51B6B /* comment@2x.png */; };
+		679EF3CC1F0CD6B000F51B6B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3CA1F0CD6B000F51B6B /* LoginViewController.swift */; };
+		679EF3CD1F0CD6B000F51B6B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */; };
+		679EF3D01F0CD6C100F51B6B /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3CE1F0CD6C100F51B6B /* RegisterViewController.swift */; };
+		679EF3D11F0CD6C100F51B6B /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */; };
+		679EF3D41F0CF14800F51B6B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */; };
+		679EF3D51F0CF14800F51B6B /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3D31F0CF14800F51B6B /* HomePageViewController.xib */; };
 		67DD4F581F0C8DAF008AA86B /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F551F0C8DAF008AA86B /* NetWorkTools.swift */; };
 		67DD4F591F0C8DAF008AA86B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F571F0C8DAF008AA86B /* Common.swift */; };
 		67DD4F7B1F0C9447008AA86B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F7A1F0C9447008AA86B /* BaseViewController.swift */; };
@@ -30,7 +41,6 @@
 		67DD4F7F1F0C9548008AA86B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F7E1F0C9548008AA86B /* HomeViewController.swift */; };
 		67DD4F811F0C9567008AA86B /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F801F0C9567008AA86B /* RootViewController.swift */; };
 		67DD4F841F0C9580008AA86B /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F821F0C9580008AA86B /* LeftViewController.swift */; };
-		67DD4F851F0C9580008AA86B /* LeftViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DD4F831F0C9580008AA86B /* LeftViewController.xib */; };
 		67DD4F8A1F0C9907008AA86B /* ExampleDrawerVisualStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F891F0C9907008AA86B /* ExampleDrawerVisualStateManager.swift */; };
 		AE0AE4BC5A84FD94653C3641 /* Pods_PGDBK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 191B0234F231E2F3F68ABEC6 /* Pods_PGDBK.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +57,6 @@
 		679EF3921F0C9AF100F51B6B /* leftBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "leftBack@2x.png"; sourceTree = "<group>"; };
 		679EF3931F0C9AF100F51B6B /* erweima@2x.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "erweima@2x.JPG"; sourceTree = "<group>"; };
 		679EF3941F0C9AF100F51B6B /* defaultIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "defaultIcon@2x.png"; sourceTree = "<group>"; };
-		679EF3951F0C9AF100F51B6B /* comment@2X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2X.png"; sourceTree = "<group>"; };
 		679EF3961F0C9AF100F51B6B /* collected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collected@2x.png"; sourceTree = "<group>"; };
 		679EF3971F0C9AF100F51B6B /* collect@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "collect@2x.png"; sourceTree = "<group>"; };
 		679EF3981F0C9AF100F51B6B /* aboutMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "aboutMe@2x.png"; sourceTree = "<group>"; };
@@ -56,6 +65,18 @@
 		679EF3B61F0CC07E00F51B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		679EF3B71F0CC07E00F51B6B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		679EF3B81F0CC07E00F51B6B /* PGDBK-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PGDBK-Header.h"; sourceTree = "<group>"; };
+		679EF3BD1F0CC42600F51B6B /* LeftTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTableViewCell.swift; sourceTree = "<group>"; };
+		679EF3BE1F0CC42600F51B6B /* LeftTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftTableViewCell.xib; sourceTree = "<group>"; };
+		679EF3C11F0CC5F300F51B6B /* LeftHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftHeadView.swift; sourceTree = "<group>"; };
+		679EF3C31F0CC5FE00F51B6B /* LeftHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftHeadView.xib; sourceTree = "<group>"; };
+		679EF3C51F0CCB0000F51B6B /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
+		679EF3C81F0CD12E00F51B6B /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2x.png"; sourceTree = "<group>"; };
+		679EF3CA1F0CD6B000F51B6B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		679EF3CE1F0CD6C100F51B6B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		679EF3D31F0CF14800F51B6B /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
 		67DD4F551F0C8DAF008AA86B /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		67DD4F571F0C8DAF008AA86B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		67DD4F7A1F0C9447008AA86B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +84,6 @@
 		67DD4F7E1F0C9548008AA86B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		67DD4F801F0C9567008AA86B /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		67DD4F821F0C9580008AA86B /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		67DD4F831F0C9580008AA86B /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		67DD4F891F0C9907008AA86B /* ExampleDrawerVisualStateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDrawerVisualStateManager.swift; sourceTree = "<group>"; };
 		CECA19C3693B18B0CA32EE9D /* Pods-PGDBK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PGDBK.release.xcconfig"; path = "Pods/Target Support Files/Pods-PGDBK/Pods-PGDBK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -153,7 +173,7 @@
 				679EF3921F0C9AF100F51B6B /* leftBack@2x.png */,
 				679EF3931F0C9AF100F51B6B /* erweima@2x.JPG */,
 				679EF3941F0C9AF100F51B6B /* defaultIcon@2x.png */,
-				679EF3951F0C9AF100F51B6B /* comment@2X.png */,
+				679EF3C81F0CD12E00F51B6B /* comment@2x.png */,
 				679EF3961F0C9AF100F51B6B /* collected@2x.png */,
 				679EF3971F0C9AF100F51B6B /* collect@2x.png */,
 				679EF3981F0C9AF100F51B6B /* aboutMe@2x.png */,
@@ -213,9 +233,9 @@
 		67DD4F611F0C92CF008AA86B /* Member */ = {
 			isa = PBXGroup;
 			children = (
+				67DD4F681F0C92F4008AA86B /* Controller */,
 				67DD4F661F0C92F4008AA86B /* View */,
 				67DD4F671F0C92F4008AA86B /* Model */,
-				67DD4F681F0C92F4008AA86B /* Controller */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -234,7 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				67DD4F821F0C9580008AA86B /* LeftViewController.swift */,
-				67DD4F831F0C9580008AA86B /* LeftViewController.xib */,
+				679EF3C51F0CCB0000F51B6B /* LeftViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -249,6 +269,10 @@
 		67DD4F651F0C92CF008AA86B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				679EF3BD1F0CC42600F51B6B /* LeftTableViewCell.swift */,
+				679EF3BE1F0CC42600F51B6B /* LeftTableViewCell.xib */,
+				679EF3C11F0CC5F300F51B6B /* LeftHeadView.swift */,
+				679EF3C31F0CC5FE00F51B6B /* LeftHeadView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +294,12 @@
 		67DD4F681F0C92F4008AA86B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				679EF3CA1F0CD6B000F51B6B /* LoginViewController.swift */,
+				679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */,
+				679EF3CE1F0CD6C100F51B6B /* RegisterViewController.swift */,
+				679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */,
+				679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */,
+				679EF3D31F0CF14800F51B6B /* HomePageViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -380,20 +410,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				679EF3BC1F0CC07E00F51B6B /* Info.plist in Resources */,
+				679EF3D51F0CF14800F51B6B /* HomePageViewController.xib in Resources */,
+				679EF3C61F0CCB0000F51B6B /* LeftViewController.xib in Resources */,
 				679EF39E1F0C9AF100F51B6B /* leftBack@2x.png in Resources */,
-				67DD4F851F0C9580008AA86B /* LeftViewController.xib in Resources */,
+				679EF3CD1F0CD6B000F51B6B /* LoginViewController.xib in Resources */,
 				679EF39B1F0C9AF100F51B6B /* setting@2x.png in Resources */,
 				679EF3BB1F0CC07E00F51B6B /* LaunchScreen.storyboard in Resources */,
 				679EF39D1F0C9AF100F51B6B /* mainSlide@2x.png in Resources */,
+				679EF3C91F0CD12E00F51B6B /* comment@2x.png in Resources */,
 				679EF3BA1F0CC07E00F51B6B /* Assets.xcassets in Resources */,
 				679EF3991F0C9AF100F51B6B /* textLogo@2x.jpg in Resources */,
 				679EF3A31F0C9AF100F51B6B /* collect@2x.png in Resources */,
+				679EF3D11F0CD6C100F51B6B /* RegisterViewController.xib in Resources */,
 				679EF3A21F0C9AF100F51B6B /* collected@2x.png in Resources */,
 				679EF3A41F0C9AF100F51B6B /* aboutMe@2x.png in Resources */,
+				679EF3C01F0CC42600F51B6B /* LeftTableViewCell.xib in Resources */,
 				679EF39F1F0C9AF100F51B6B /* erweima@2x.JPG in Resources */,
 				679EF39C1F0C9AF100F51B6B /* searchIcon@2x.png in Resources */,
 				679EF3A01F0C9AF100F51B6B /* defaultIcon@2x.png in Resources */,
-				679EF3A11F0C9AF100F51B6B /* comment@2X.png in Resources */,
+				679EF3C41F0CC5FE00F51B6B /* LeftHeadView.xib in Resources */,
 				679EF39A1F0C9AF100F51B6B /* startMe@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,13 +488,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				679EF3CC1F0CD6B000F51B6B /* LoginViewController.swift in Sources */,
 				67DD4F7D1F0C946E008AA86B /* MainNaviController.swift in Sources */,
 				67DD4F7B1F0C9447008AA86B /* BaseViewController.swift in Sources */,
 				67DD4F8A1F0C9907008AA86B /* ExampleDrawerVisualStateManager.swift in Sources */,
 				679EF3B91F0CC07E00F51B6B /* AppDelegate.swift in Sources */,
 				67DD4F591F0C8DAF008AA86B /* Common.swift in Sources */,
 				67DD4F7F1F0C9548008AA86B /* HomeViewController.swift in Sources */,
+				679EF3BF1F0CC42600F51B6B /* LeftTableViewCell.swift in Sources */,
+				679EF3D41F0CF14800F51B6B /* HomePageViewController.swift in Sources */,
+				679EF3C21F0CC5F300F51B6B /* LeftHeadView.swift in Sources */,
 				67DD4F841F0C9580008AA86B /* LeftViewController.swift in Sources */,
+				679EF3D01F0CD6C100F51B6B /* RegisterViewController.swift in Sources */,
 				67DD4F811F0C9567008AA86B /* RootViewController.swift in Sources */,
 				67DD4F581F0C8DAF008AA86B /* NetWorkTools.swift in Sources */,
 			);

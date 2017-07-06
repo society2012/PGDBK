@@ -16,6 +16,30 @@ class RootViewController: BaseViewController {
         self.setupLeftBtn(imageName: "mainSlide")
 
         self.view.backgroundColor = UIColor.red
+        NotificationCenter.default.addObserver(self, selector: #selector(selectorFunction(note:)), name: NSNotification.Name("goLogin"), object: nil)
+        
+    }
+    
+    
+    func selectorFunction(note:Notification) -> Void {
+        
+        let come = note.object as?String
+        if(come == "1"){
+            let loginVC = LoginViewController(nibName: "LoginViewController", bundle: nil)
+            self.navigationController?.pushViewController(loginVC, animated: true)
+        }else{
+            
+            let homeVC = HomePageViewController(nibName: "HomePageViewController", bundle: nil)
+            self.navigationController?.pushViewController(homeVC, animated: true)
+            
+        }
+        
+       
+
+    }
+    
+    override func leftAction() {
+        kDelegate?.drawerController?.toggleDrawerSide(.left, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

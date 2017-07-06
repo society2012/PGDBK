@@ -25,6 +25,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let leftVC = LeftViewController(nibName: "LeftViewController", bundle: nil)
         
+
+        
         let leftNavi = MainNaviController(rootViewController: leftVC)
         
         self.drawerController = DrawerController(centerViewController: rootNavi, leftDrawerViewController: leftNavi)
