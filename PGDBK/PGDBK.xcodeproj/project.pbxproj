@@ -34,6 +34,16 @@
 		679EF3D11F0CD6C100F51B6B /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */; };
 		679EF3D41F0CF14800F51B6B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */; };
 		679EF3D51F0CF14800F51B6B /* HomePageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 679EF3D31F0CF14800F51B6B /* HomePageViewController.xib */; };
+		67A843601F0DCC2700652A4E /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8435E1F0DCC2700652A4E /* MemberTableViewCell.swift */; };
+		67A843611F0DCC2700652A4E /* MemberTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A8435F1F0DCC2700652A4E /* MemberTableViewCell.xib */; };
+		67A843631F0DCFD200652A4E /* HomePageHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A843621F0DCFD100652A4E /* HomePageHeadView.swift */; };
+		67A843651F0DCFE700652A4E /* HomePageHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A843641F0DCFE700652A4E /* HomePageHeadView.xib */; };
+		67A843671F0E149800652A4E /* MemberSexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A843661F0E149800652A4E /* MemberSexView.swift */; };
+		67A8436A1F0E24B700652A4E /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A843681F0E24B700652A4E /* NoteTableViewCell.swift */; };
+		67A8436B1F0E24B700652A4E /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A843691F0E24B700652A4E /* NoteTableViewCell.xib */; };
+		67A8436D1F0E290500652A4E /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8436C1F0E290500652A4E /* NoteModel.swift */; };
+		67A843701F0E368500652A4E /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8436E1F0E368500652A4E /* NoteDetailViewController.swift */; };
+		67A843711F0E368500652A4E /* NoteDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A8436F1F0E368500652A4E /* NoteDetailViewController.xib */; };
 		67DD4F581F0C8DAF008AA86B /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F551F0C8DAF008AA86B /* NetWorkTools.swift */; };
 		67DD4F591F0C8DAF008AA86B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F571F0C8DAF008AA86B /* Common.swift */; };
 		67DD4F7B1F0C9447008AA86B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DD4F7A1F0C9447008AA86B /* BaseViewController.swift */; };
@@ -77,6 +87,16 @@
 		679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		679EF3D31F0CF14800F51B6B /* HomePageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageViewController.xib; sourceTree = "<group>"; };
+		67A8435E1F0DCC2700652A4E /* MemberTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		67A8435F1F0DCC2700652A4E /* MemberTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberTableViewCell.xib; sourceTree = "<group>"; };
+		67A843621F0DCFD100652A4E /* HomePageHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageHeadView.swift; sourceTree = "<group>"; };
+		67A843641F0DCFE700652A4E /* HomePageHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomePageHeadView.xib; sourceTree = "<group>"; };
+		67A843661F0E149800652A4E /* MemberSexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberSexView.swift; sourceTree = "<group>"; };
+		67A843681F0E24B700652A4E /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		67A843691F0E24B700652A4E /* NoteTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		67A8436C1F0E290500652A4E /* NoteModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		67A8436E1F0E368500652A4E /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		67A8436F1F0E368500652A4E /* NoteDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteDetailViewController.xib; sourceTree = "<group>"; };
 		67DD4F551F0C8DAF008AA86B /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		67DD4F571F0C8DAF008AA86B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		67DD4F7A1F0C9447008AA86B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +232,8 @@
 			children = (
 				67DD4F7E1F0C9548008AA86B /* HomeViewController.swift */,
 				67DD4F801F0C9567008AA86B /* RootViewController.swift */,
+				67A8436E1F0E368500652A4E /* NoteDetailViewController.swift */,
+				67A8436F1F0E368500652A4E /* NoteDetailViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +241,7 @@
 		67DD4F5F1F0C92CF008AA86B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				67A8436C1F0E290500652A4E /* NoteModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,6 +249,8 @@
 		67DD4F601F0C92CF008AA86B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67A843681F0E24B700652A4E /* NoteTableViewCell.swift */,
+				67A843691F0E24B700652A4E /* NoteTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,6 +305,11 @@
 		67DD4F661F0C92F4008AA86B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				67A8435E1F0DCC2700652A4E /* MemberTableViewCell.swift */,
+				67A8435F1F0DCC2700652A4E /* MemberTableViewCell.xib */,
+				67A843621F0DCFD100652A4E /* HomePageHeadView.swift */,
+				67A843641F0DCFE700652A4E /* HomePageHeadView.xib */,
+				67A843661F0E149800652A4E /* MemberSexView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -418,14 +448,18 @@
 				679EF3BB1F0CC07E00F51B6B /* LaunchScreen.storyboard in Resources */,
 				679EF39D1F0C9AF100F51B6B /* mainSlide@2x.png in Resources */,
 				679EF3C91F0CD12E00F51B6B /* comment@2x.png in Resources */,
+				67A843651F0DCFE700652A4E /* HomePageHeadView.xib in Resources */,
 				679EF3BA1F0CC07E00F51B6B /* Assets.xcassets in Resources */,
 				679EF3991F0C9AF100F51B6B /* textLogo@2x.jpg in Resources */,
 				679EF3A31F0C9AF100F51B6B /* collect@2x.png in Resources */,
 				679EF3D11F0CD6C100F51B6B /* RegisterViewController.xib in Resources */,
 				679EF3A21F0C9AF100F51B6B /* collected@2x.png in Resources */,
+				67A8436B1F0E24B700652A4E /* NoteTableViewCell.xib in Resources */,
 				679EF3A41F0C9AF100F51B6B /* aboutMe@2x.png in Resources */,
 				679EF3C01F0CC42600F51B6B /* LeftTableViewCell.xib in Resources */,
 				679EF39F1F0C9AF100F51B6B /* erweima@2x.JPG in Resources */,
+				67A843711F0E368500652A4E /* NoteDetailViewController.xib in Resources */,
+				67A843611F0DCC2700652A4E /* MemberTableViewCell.xib in Resources */,
 				679EF39C1F0C9AF100F51B6B /* searchIcon@2x.png in Resources */,
 				679EF3A01F0C9AF100F51B6B /* defaultIcon@2x.png in Resources */,
 				679EF3C41F0CC5FE00F51B6B /* LeftHeadView.xib in Resources */,
@@ -492,14 +526,20 @@
 				67DD4F7D1F0C946E008AA86B /* MainNaviController.swift in Sources */,
 				67DD4F7B1F0C9447008AA86B /* BaseViewController.swift in Sources */,
 				67DD4F8A1F0C9907008AA86B /* ExampleDrawerVisualStateManager.swift in Sources */,
+				67A843631F0DCFD200652A4E /* HomePageHeadView.swift in Sources */,
+				67A8436A1F0E24B700652A4E /* NoteTableViewCell.swift in Sources */,
 				679EF3B91F0CC07E00F51B6B /* AppDelegate.swift in Sources */,
 				67DD4F591F0C8DAF008AA86B /* Common.swift in Sources */,
 				67DD4F7F1F0C9548008AA86B /* HomeViewController.swift in Sources */,
+				67A8436D1F0E290500652A4E /* NoteModel.swift in Sources */,
 				679EF3BF1F0CC42600F51B6B /* LeftTableViewCell.swift in Sources */,
 				679EF3D41F0CF14800F51B6B /* HomePageViewController.swift in Sources */,
 				679EF3C21F0CC5F300F51B6B /* LeftHeadView.swift in Sources */,
+				67A843601F0DCC2700652A4E /* MemberTableViewCell.swift in Sources */,
 				67DD4F841F0C9580008AA86B /* LeftViewController.swift in Sources */,
 				679EF3D01F0CD6C100F51B6B /* RegisterViewController.swift in Sources */,
+				67A843671F0E149800652A4E /* MemberSexView.swift in Sources */,
+				67A843701F0E368500652A4E /* NoteDetailViewController.swift in Sources */,
 				67DD4F811F0C9567008AA86B /* RootViewController.swift in Sources */,
 				67DD4F581F0C8DAF008AA86B /* NetWorkTools.swift in Sources */,
 			);

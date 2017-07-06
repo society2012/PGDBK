@@ -17,9 +17,17 @@ class RootViewController: BaseViewController {
 
         self.view.backgroundColor = UIColor.red
         NotificationCenter.default.addObserver(self, selector: #selector(selectorFunction(note:)), name: NSNotification.Name("goLogin"), object: nil)
-        
+         NotificationCenter.default.addObserver(self, selector: #selector(goNext(note:)), name: NSNotification.Name(kSelectFun), object: nil)
     }
     
+    
+    func goNext(note:Notification) -> Void {
+        let index = note.object as?IndexPath
+        if(index?.row == 1){
+            let homeVC = HomeViewController()
+            self.navigationController?.pushViewController(homeVC, animated: true)
+        }
+    }
     
     func selectorFunction(note:Notification) -> Void {
         

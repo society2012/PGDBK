@@ -1,0 +1,6 @@
+framework module Pods_PGDBK {
+  umbrella header "Pods-PGDBK-umbrella.h"
+
+  export *
+  module * { export * }
+}

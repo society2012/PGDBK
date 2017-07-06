@@ -28,6 +28,9 @@ class LeftViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(infoChange(note:)), name: NSNotification.Name("changeInfo"), object: nil)
+        
         NotificationCenter.default.addObserver(self, selector: #selector(loginSuccess(note:)), name: NSNotification.Name("loginSuccess"), object: nil)
         setupHeadView()
         let id = UserDefaults.standard.object(forKey: "userId") as?String
@@ -37,6 +40,17 @@ class LeftViewController: BaseViewController {
     func loginSuccess(note:Notification) -> Void {
         let id = note.object as?String
         self.setupUserInfo(id: id)
+    }
+    
+    
+    func infoChange(note:Notification) -> Void {
+        let obj = note.object
+        
+        if(obj is String){
+            self.headView?.nickLabel.text = obj as?String
+        }else{
+            self.headView?.logoView.image = obj as?UIImage
+        }
     }
     
     func setupHeadView() -> Void {

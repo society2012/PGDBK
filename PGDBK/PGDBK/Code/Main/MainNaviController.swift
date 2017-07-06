@@ -15,7 +15,9 @@ class MainNaviController: UINavigationController {
         
         let bar = UINavigationBar.appearance()
         bar.isTranslucent = false
-        bar.tintColor = UIColor.white
+        //主题颜色（字体）
+        bar.tintColor = UIColor.black
+        bar.barTintColor = UIColor.white
         bar.barStyle = .default
         
 
