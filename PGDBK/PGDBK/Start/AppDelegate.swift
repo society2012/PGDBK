@@ -19,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        sleep(3)
+        
         let rootVC = RootViewController()
         
         let rootNavi = MainNaviController(rootViewController: rootVC)

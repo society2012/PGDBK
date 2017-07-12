@@ -32,9 +32,19 @@ class LeftViewController: BaseViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(infoChange(note:)), name: NSNotification.Name("changeInfo"), object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(loginSuccess(note:)), name: NSNotification.Name("loginSuccess"), object: nil)
+        
+          NotificationCenter.default.addObserver(self, selector: #selector(loginOut), name: NSNotification.Name("logoutSuccess"), object: nil)
+        
         setupHeadView()
         let id = UserDefaults.standard.object(forKey: "userId") as?String
          self.setupUserInfo(id: id)
+    }
+    
+    
+    func loginOut() -> Void {
+          self.headView?.nickLabel.text = "点击登录"
+         self.headView?.logoView.image = UIImage(named: "defaultIcon@2x.png")
+        
     }
     
     func loginSuccess(note:Notification) -> Void {

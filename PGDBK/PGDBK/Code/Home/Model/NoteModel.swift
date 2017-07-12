@@ -15,6 +15,7 @@ class NoteModel: NSObject {
     var id:String?
     var pic:String?
     var time:String?
+    var collectId:String?
     
 //    init(dict:[String:Any]) {
 //        

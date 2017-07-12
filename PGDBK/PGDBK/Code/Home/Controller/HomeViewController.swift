@@ -8,6 +8,7 @@
 
 import UIKit
 import MJRefresh
+import SVProgressHUD
 
 let kHomeNoteCell = "kHomeNoteCell"
 
@@ -20,6 +21,7 @@ class HomeViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "首页"
         setupTable()
         setupData()
     }
@@ -42,15 +44,23 @@ class HomeViewController: BaseViewController {
     }
     func setupData() -> Void {
         
+        SVProgressHUD.show(withStatus: "加载中")
+        SVProgressHUD.setDefaultStyle(.dark)
         let url = SERVER_IP + "/index.php/api/AppInterface/getCatArticle"
         let parmertas:[String:Any] = ["id":self.carId,"page":page,"pagesize":10]
         
         NetWorkTools.requestData(URLString: url, type: .post, parmertas: parmertas) { (response) in
+            SVProgressHUD.dismiss()
             guard let dic = response as? [String:Any] else{return}
             guard let data = dic["data"] as?[[String:Any]] else{return}
+          
             let code = dic["code"] as?Int
             self.homeTable?.mj_header.endRefreshing()
             self.homeTable?.mj_footer.endRefreshing()
+            self.homeTable?.mj_footer.isHidden = false
+            if(data.count < 10){
+                self.homeTable?.mj_footer.isHidden = true
+            }
             if(code == 200){
                 if(self.page == 1){
                     self.dataSource.removeAll()

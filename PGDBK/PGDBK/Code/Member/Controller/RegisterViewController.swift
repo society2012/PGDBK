@@ -23,24 +23,25 @@ class RegisterViewController: BaseViewController {
     @IBAction func registerAction(_ sender: UIButton) {
         
         if(self.userNameFild.text == nil){
-            let alert = UIAlertView(title: "提示", message: "用户名不能为空", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+            
+            SVProgressHUD.showError(withStatus: "用户名不能为空")
             return
+
         }
         if(self.pwdFild.text == nil){
-            let alert = UIAlertView(title: "提示", message: "密码不能为空", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+            SVProgressHUD.showError(withStatus: "密码不能为空")
+
             return
         }
         if(self.confirmFild.text == nil){
-            let alert = UIAlertView(title: "提示", message: "确认密码不能为空", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+            SVProgressHUD.showError(withStatus: "确认密码不能为空")
+
             return
         }
         
         if(self.pwdFild.text != self.confirmFild.text){
-            let alert = UIAlertView(title: "提示", message: "两次输入的密码不同", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+            SVProgressHUD.showError(withStatus: "两次输入的密码不同")
+
             return
         }
         

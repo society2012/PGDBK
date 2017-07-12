@@ -22,10 +22,10 @@ class HomePageViewController: BaseViewController {
     
     var logoImage : UIImage?
     
-    lazy var accessView:UIView = {
-    
-        return UIView()
-    }()
+//    lazy var accessView:UIView = {
+//    
+//        return UIView()
+//    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

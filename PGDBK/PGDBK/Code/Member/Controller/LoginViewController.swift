@@ -33,13 +33,13 @@ class LoginViewController: BaseViewController {
     }
     @IBAction func loginBtnAction(_ sender: UIButton) {
         if(self.userNameFild.text == nil){
-            let alert = UIAlertView(title: "提示", message: "用户名不能为空", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+            SVProgressHUD.showError(withStatus: "用户名不能为空")
             return
         }
         if(self.passwordFild.text == nil){
-            let alert = UIAlertView(title: "提示", message: "密码不能为空", delegate: nil, cancelButtonTitle: "确定")
-            alert.show()
+             SVProgressHUD.showError(withStatus: "密码不能为空")
+//            let alert = UIAlertView(title: "提示", message: "密码不能为空", delegate: nil, cancelButtonTitle: "确定")
+//            alert.show()
             return
         }
         

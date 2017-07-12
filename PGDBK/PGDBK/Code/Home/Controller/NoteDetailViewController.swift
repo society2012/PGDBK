@@ -64,8 +64,21 @@ class NoteDetailViewController: BaseViewController {
     }
     
     func btnAction(btn:UIButton) -> Void {
-        self.view.endEditing(true)
+        self.inputTextView.resignFirstResponder()
+        self.tempFild?.resignFirstResponder()
         if(btn.tag == 11){
+            
+             let uid = UserDefaults.standard.object(forKey: "userId") as?String
+            if(uid == nil){
+                SVProgressHUD.showError(withStatus: "请前去登录")
+                 return
+            }
+            
+            if(self.inputTextView.text == nil || self.inputTextView.text == ""){
+                 SVProgressHUD.showError(withStatus: "评论内容不能为空")
+                return
+            }
+            commentNote()
             
         }
     }
@@ -77,7 +90,7 @@ class NoteDetailViewController: BaseViewController {
         self.view.addSubview(bottomView)
         
         
-        let label = UILabel(frame: CGRect(x: 20, y: 6, width: kScreenW - 70, height: 26))
+        let label = UILabel(frame: CGRect(x: 20, y: 6, width: kScreenW - 80, height: 26))
         label.font = UIFont.systemFont(ofSize: 12)
         label.textColor = kRGBColorFromHex(rgbValue: 0x999999)
         label.layer.cornerRadius = 12
@@ -86,12 +99,26 @@ class NoteDetailViewController: BaseViewController {
         label.layer.masksToBounds = true
         bottomView.addSubview(label)
         
+        
+        let btn = UIButton(frame: CGRect(x: kScreenW - 80, y: 0, width: 80, height: 40))
+        let image = UIImage(named: "comment.png")
+        btn.addTarget(self, action: #selector(commentLsitAction), for: .touchUpInside)
+        btn.setImage(image, for: .normal)
+        bottomView.addSubview(btn)
+        
         let tap = UITapGestureRecognizer(target: self, action: #selector(pushInputView))
         bottomView.addGestureRecognizer(tap)
         
         tempFild = UITextField(frame: CGRect(x: 0, y: kScreenH + 100, width: 100, height: 20))
         tempFild?.inputAccessoryView = self.accessView
         self.view.addSubview(tempFild!)
+    }
+    
+    
+    func commentLsitAction() -> Void {
+        let commentList = CommentListViewController(nibName: "CommentListViewController", bundle: nil)
+        commentList.noteId = self.noteId
+        self.navigationController?.pushViewController(commentList, animated: true)
     }
     
     func initRightBtn() -> Void {
@@ -131,6 +158,33 @@ class NoteDetailViewController: BaseViewController {
 
 // MARK:-network
 extension NoteDetailViewController{
+    
+    
+    func commentNote() -> Void {
+        let url = SERVER_IP + "/index.php/api/AppInterface/comment"
+        guard let uid = UserDefaults.standard.object(forKey: "userId") as?String else{return}
+        let parmertas:[String:Any] = ["articleid":self.noteId,"userid":uid,"content":self.inputTextView.text!]
+        
+        NetWorkTools.requestData(URLString: url, type: .post, parmertas: parmertas) { (response) in
+            
+             self.view.endEditing(true)
+            
+            guard let dic = response as? [String:Any] else{return}
+//            guard let data = dic["data"] as?[String:Any] else{return}
+            let code = dic["code"] as?Int
+            if(code == 200){
+                self.inputTextView.text = nil
+              
+                SVProgressHUD.showSuccess(withStatus: "评论成功")
+            }else{
+                SVProgressHUD.showError(withStatus: "评论失败了")
+            }
+            
+        }
+
+    }
+    
+    
     func isCollected() -> Void {
         let url = SERVER_IP + "/index.php/api/AppInterface/isCollection"
         guard let uid = UserDefaults.standard.object(forKey: "userId") as?String else{return}
