@@ -11,7 +11,7 @@
 
 
 
-#if 1
+#if 0
     //测试
 #define SERVER_IP @"http://localhost:8888/blog"
 

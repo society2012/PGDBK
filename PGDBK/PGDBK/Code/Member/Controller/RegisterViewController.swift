@@ -16,24 +16,26 @@ class RegisterViewController: BaseViewController {
     @IBOutlet var userNameFild: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         self.title = "注册"
 
         // Do any additional setup after loading the view.
     }
 
     @IBAction func registerAction(_ sender: UIButton) {
         
-        if(self.userNameFild.text == nil){
+        if(self.userNameFild.text == nil || self.userNameFild.text == ""){
             
             SVProgressHUD.showError(withStatus: "用户名不能为空")
             return
 
         }
-        if(self.pwdFild.text == nil){
+        if(self.pwdFild.text == nil || self.pwdFild.text == ""){
             SVProgressHUD.showError(withStatus: "密码不能为空")
 
             return
         }
-        if(self.confirmFild.text == nil){
+        if(self.confirmFild.text == nil || self.confirmFild.text == ""){
             SVProgressHUD.showError(withStatus: "确认密码不能为空")
 
             return

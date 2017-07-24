@@ -120,7 +120,7 @@
 		679EF3C51F0CCB0000F51B6B /* LeftViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftViewController.xib; sourceTree = "<group>"; };
 		679EF3C81F0CD12E00F51B6B /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "comment@2x.png"; sourceTree = "<group>"; };
 		679EF3CA1F0CD6B000F51B6B /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoginViewController.xib; path = Member/Controller/LoginViewController.xib; sourceTree = "<group>"; };
+		679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		679EF3CE1F0CD6C100F51B6B /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
@@ -203,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				67DD4F5D1F0C92CF008AA86B /* Home */,
-				679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */,
 				67DD4F611F0C92CF008AA86B /* Member */,
 				67DD4F621F0C92CF008AA86B /* Left */,
 				67DD4F691F0C93AE008AA86B /* Main */,
@@ -377,6 +376,7 @@
 				675F60AB1F0F3A79007C42E8 /* CollectionViewController.swift */,
 				675F60AC1F0F3A79007C42E8 /* CollectionViewController.xib */,
 				679EF3CA1F0CD6B000F51B6B /* LoginViewController.swift */,
+				679EF3CB1F0CD6B000F51B6B /* LoginViewController.xib */,
 				679EF3CE1F0CD6C100F51B6B /* RegisterViewController.swift */,
 				679EF3CF1F0CD6C100F51B6B /* RegisterViewController.xib */,
 				679EF3D21F0CF14800F51B6B /* HomePageViewController.swift */,
@@ -468,7 +468,7 @@
 				TargetAttributes = {
 					67958F231F0C85D2001117E8 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = NN3YM25JE4;
+						DevelopmentTeam = 3999UXF2GH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -734,12 +734,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NN3YM25JE4;
+				DEVELOPMENT_TEAM = 3999UXF2GH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PGDBK/Start/PGDBK-Header.h";
 				INFOPLIST_FILE = PGDBK/Start/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zintao.PGDBK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherry.PGDBK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PGDBK/Start/PGDBK-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -752,12 +752,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = NN3YM25JE4;
+				DEVELOPMENT_TEAM = 3999UXF2GH;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/PGDBK/Start/PGDBK-Header.h";
 				INFOPLIST_FILE = PGDBK/Start/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zintao.PGDBK;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cherry.PGDBK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/PGDBK/Start/PGDBK-Header.h";
 				SWIFT_VERSION = 3.0;

@@ -28,6 +28,7 @@ class LeftViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
      
+//        self.leftTable.backgroundColor = UIColor.red
         
         NotificationCenter.default.addObserver(self, selector: #selector(infoChange(note:)), name: NSNotification.Name("changeInfo"), object: nil)
         
@@ -36,8 +37,7 @@ class LeftViewController: BaseViewController {
           NotificationCenter.default.addObserver(self, selector: #selector(loginOut), name: NSNotification.Name("logoutSuccess"), object: nil)
         
         setupHeadView()
-        let id = UserDefaults.standard.object(forKey: "userId") as?String
-         self.setupUserInfo(id: id)
+      
     }
     
     
@@ -63,13 +63,19 @@ class LeftViewController: BaseViewController {
         }
     }
     
+    
+    
     func setupHeadView() -> Void {
         
         self.leftTable.rowHeight = 45
         let nib = UINib(nibName: "LeftTableViewCell", bundle: nil)
         self.leftTable.register(nib, forCellReuseIdentifier: kLeftCell)
+        self.perform(#selector(delayAdd), with: nib, afterDelay: 0.3)
+    }
+    
+    func delayAdd() -> Void {
         let  headView = Bundle.main.loadNibNamed("LeftHeadView", owner: self, options: nil)?.first as?LeftHeadView
-        headView?.frame = CGRect(x: 0, y: 0, width: self.leftTable.frame.width, height: 120 + 64)
+        headView?.frame = CGRect(x: 0, y: 0, width: self.leftTable.frame.width, height: 120)
         self.headView = headView
         self.leftTable.tableHeaderView = headView
         self.leftTable.tableFooterView = UIView()
@@ -79,7 +85,11 @@ class LeftViewController: BaseViewController {
         
         self.headView?.isUserInteractionEnabled = true
         self.headView?.addGestureRecognizer(tap)
+        let id = UserDefaults.standard.object(forKey: "userId") as?String
+        self.setupUserInfo(id: id)
+
     }
+    
     
     func tapLogo() -> Void {
         closeLeftView()

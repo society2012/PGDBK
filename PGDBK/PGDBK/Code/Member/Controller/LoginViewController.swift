@@ -18,6 +18,8 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+         self.title = "注册"
+        
         let name = UserDefaults.standard.object(forKey: "userName") as?String
         let pwd = UserDefaults.standard.object(forKey: "passWord") as?String
         self.userNameFild.text = name
@@ -32,14 +34,13 @@ class LoginViewController: BaseViewController {
         
     }
     @IBAction func loginBtnAction(_ sender: UIButton) {
-        if(self.userNameFild.text == nil){
+        if(self.userNameFild.text == nil || self.userNameFild.text == ""){
             SVProgressHUD.showError(withStatus: "用户名不能为空")
             return
         }
-        if(self.passwordFild.text == nil){
+        if(self.passwordFild.text == nil || self.passwordFild.text == ""){
              SVProgressHUD.showError(withStatus: "密码不能为空")
-//            let alert = UIAlertView(title: "提示", message: "密码不能为空", delegate: nil, cancelButtonTitle: "确定")
-//            alert.show()
+
             return
         }
         
@@ -59,11 +60,11 @@ class LoginViewController: BaseViewController {
         NetWorkTools.requestData(URLString: url, type: .post, parmertas: parmertas) { (response) in
             SVProgressHUD.dismiss()
             guard let dic = response as? [String:Any] else{return}
-            guard let data = dic["data"] as?[String:Any] else{return}
+            let data = dic["data"] as?[String:Any]
             let code = dic["code"] as?Int
             let message = dic["message"] as?String
             if(code == 200){
-                let id = data["id"] as?String
+                let id = data?["id"] as?String
                 UserDefaults.standard.set(id, forKey: "userId")
                 UserDefaults.standard.set(self.userNameFild.text, forKey: "userName")
                  UserDefaults.standard.set(self.passwordFild.text, forKey: "passWord")

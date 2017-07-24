@@ -22,10 +22,7 @@ class HomePageViewController: BaseViewController {
     
     var logoImage : UIImage?
     
-//    lazy var accessView:UIView = {
-//    
-//        return UIView()
-//    }()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,9 +56,7 @@ class HomePageViewController: BaseViewController {
 
     }
     
-//    func accessView() -> Void {
-//        
-//    }
+
     
     func headTap() -> Void {
         let actionSheet = UIActionSheet(title: nil, delegate: self, cancelButtonTitle:  "取消", destructiveButtonTitle: nil, otherButtonTitles:"相册","相机")

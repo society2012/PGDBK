@@ -51,7 +51,7 @@ class RootViewController: BaseViewController,TitleViewDelegate {
         
         if(index?.row == 0){
             
-            let url = URL(string: "https://itunes.apple.com/app/id1248749905")
+            let url = URL(string: "https://itunes.apple.com/app/id1259753353")
             UIApplication.shared.openURL(url!)
         }
         
